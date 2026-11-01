@@ -4,9 +4,67 @@
   background-size: cover;
   width: 100%;
   height: 750px;
+
+  padding-top: 120px;
 }
 
 .perfil {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.perfil img {
+  margin: 0 auto;
+  height: 96px;
+  width: 96px;
+  object-fit: cover;
+  margin-bottom: 56px;
+}
+
+.perfil h1 {
+  font: var(--text-lg);
+  color: var(--gray-100);
+  margin-bottom: 20px;
+}
+
+.perfil h2 {
+  font: var(--subtitle);
+  color: var(--gray-200);
+  margin-bottom: 8px;
+}
+
+.perfil h2 span {
+  color: var(--dred);
+}
+
+.perfil p {
+  font: var(--textm-md);
+  color: var(--gray-300);
+  margin-bottom: 80px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icons img {
+  height: 32px;
+  max-height: 32px;
+  object-fit: contain;
+  width: auto;
+}
+
+.botton {
+  width: 32px;
+  height: 32px;
+  margin: 94px auto 57px;
+}
+
+.botton img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
