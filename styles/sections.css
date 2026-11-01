@@ -1,0 +1,12 @@
+#background1 {
+  background-image: url(../assets/image/Background_Intro.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 750px;
+}
+
+.perfil {
+  display: flex;
+  justify-content: center;
+}
