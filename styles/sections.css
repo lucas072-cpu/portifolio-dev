@@ -2,10 +2,11 @@
   background-image: url(../assets/image/Background_Intro.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 750px;
-
+  min-height: 750px;
   padding-top: 120px;
+  padding-bottom: 57px;
 }
 
 .perfil {
@@ -20,28 +21,6 @@
   width: 96px;
   object-fit: cover;
   margin-bottom: 56px;
-}
-
-.perfil h1 {
-  font: var(--text-lg);
-  color: var(--gray-100);
-  margin-bottom: 20px;
-}
-
-.perfil h2 {
-  font: var(--subtitle);
-  color: var(--gray-200);
-  margin-bottom: 8px;
-}
-
-.perfil h2 span {
-  color: var(--dred);
-}
-
-.perfil p {
-  font: var(--textm-md);
-  color: var(--gray-300);
-  margin-bottom: 80px;
 }
 
 .icons {
@@ -60,11 +39,54 @@
 .botton {
   width: 32px;
   height: 32px;
-  margin: 94px auto 57px;
+  margin: 94px auto 0;
 }
 
 .botton img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 56px;
+  margin-top: 72px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.cards img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.cards figure {
+  background-color: var(--gray-400);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.cards figcaption {
+  margin-top: 20px;
+  padding: 4px;
+}
+
+.cards figure h2 {
+  font: var(--text-sm);
+  color: var(--gray-100);
+  margin-bottom: 8px;
+}
+
+.cards figure p {
+  font: var(--textm-sm);
+  color: var(--gray-200);
 }

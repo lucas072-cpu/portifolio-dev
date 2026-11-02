@@ -33,6 +33,11 @@ html {
   max-width: 1280px;
   margin-inline: auto;
   padding-inline: 163px;
-  display: flex;
-  justify-content: center;
+}
+
+main {
+  grid-template-columns: 4fr 1fr;
+  grid-template-areas:
+    "travelgram technews receita"
+    "zingen refund viagem";
 }
