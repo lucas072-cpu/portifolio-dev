@@ -102,3 +102,39 @@
   text-decoration: none;
   color: inherit;
 }
+
+.services {
+  padding-bottom: 120px;
+  background-color: var(--gray-600);
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 0 auto;
+  max-width: 888px;
+}
+
+.servico-card {
+  background-color: transparent;
+  border: 2px solid var(--gray-500);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.servico-card img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  object-position: left center;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.servico-card h3 {
+  font: var(--text-sm);
+  color: var(--gray-100);
+  margin-bottom: 8px;
+}
