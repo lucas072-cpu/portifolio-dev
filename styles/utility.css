@@ -41,3 +41,46 @@ body {
   background-color: var(--gray-500);
   color: var(--gray-100);
 }
+
+.cards figure h2 {
+  font: var(--text-sm);
+  color: var(--gray-100);
+  margin-bottom: 8px;
+}
+
+.cards figure p {
+  font: var(--textm-sm);
+  color: var(--gray-200);
+}
+
+.cards figure:hover {
+  border-color: var(--gray-300);
+}
+
+.servico-card h3 {
+  font: var(--text-sm);
+  color: var(--gray-100);
+  margin-bottom: 8px;
+}
+
+.footer-content h2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font: var(--subtitle);
+  color: var(--dpurple);
+  padding-top: 72px;
+}
+
+.footer-content h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font: var(--text-md);
+}
+
+.footer-content p {
+  font: var(--textm-md);
+  color: var(--gray-300);
+  margin-bottom: 48px;
+}

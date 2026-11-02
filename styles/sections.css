@@ -15,7 +15,7 @@
   text-align: center;
 }
 
-.perfil img {
+.perfil > img {
   margin: 0 auto;
   height: 96px;
   width: 96px;
@@ -25,6 +25,7 @@
 
 .icons {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 16px;
 }
@@ -34,12 +35,13 @@
   max-height: 32px;
   object-fit: contain;
   width: auto;
+  flex-shrink: 0;
 }
 
 .botton {
   width: 32px;
   height: 32px;
-  margin: 90px auto 0;
+  margin: 94px auto 0;
 }
 
 .botton img {
@@ -83,21 +85,6 @@
   padding: 4px;
 }
 
-.cards figure h2 {
-  font: var(--text-sm);
-  color: var(--gray-100);
-  margin-bottom: 8px;
-}
-
-.cards figure p {
-  font: var(--textm-sm);
-  color: var(--gray-200);
-}
-
-.cards figure:hover {
-  border-color: var(--gray-300);
-}
-
 .cards a {
   text-decoration: none;
   color: inherit;
@@ -133,8 +120,71 @@
   margin-bottom: 20px;
 }
 
-.servico-card h3 {
-  font: var(--text-sm);
-  color: var(--gray-100);
-  margin-bottom: 8px;
+footer {
+  background-image: url(../assets/image/Background_Contacts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 750px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 56px;
+  padding-top: 60px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 200px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--gray-400);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.button span {
+  font: var(--textm-md);
+  color: var(--gray-200);
+  text-align: left;
+  margin-left: 16px;
+  flex: 1;
+}
+
+.button:hover {
+  border-color: var(--dblue);
+}
+
+.button img.arrow {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.button:hover img:not(.arrow) {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(44%) saturate(1210%)
+    hue-rotate(185deg) brightness(96%) contrast(92%);
 }
