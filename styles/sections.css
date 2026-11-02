@@ -17,8 +17,8 @@
 
 .perfil > img {
   margin: 0 auto;
-  height: 96px;
-  width: 96px;
+  height: 120px;
+  width: 120px;
   object-fit: cover;
   margin-bottom: 56px;
 }
